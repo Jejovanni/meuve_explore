@@ -1,0 +1,35 @@
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    /* border: red solid; */
+    
+}
+.logo{
+    font-family: 'Pacifico', cursive !important; 
+    height: 12vh;
+    /* border: red solid; */
+    font-size: 50px;
+    /* justify-content: flex-start !important; */
+}
+#btnDiv{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: blue solid; */
+    width: 100%;
+}
+.navLinks{
+    color: var(--meuve-font) !important;
+    font-family: var(--meuve-family) !important;
+    font-size: var(--meuve-fontSizeBtns) !important;
+    /* border: blue solid !important; */
+    margin-right: 40px !important;
+    height: 70px;
+}
+.btns{
+    background-color: var(--meuve-color) !important;
+    font-family: var(--meuve-family) !important;
+    font-size: var(--meuve-fontSizeBtns) !important;
+    height: 70px;
+}
