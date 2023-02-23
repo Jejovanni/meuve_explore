@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    width: 100%;
+    /* border: red solid; */
+}
+#footercopy{
+    display: flex;
+    align-items: center;
+    /* border: red solid; */
+    width: 100%;
+    justify-content: flex-end;
+}

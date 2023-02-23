@@ -1,0 +1,34 @@
+#Banner2{
+    font-family: var(--meuve-family) !important;
+    font-size: 35px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner2left, #banner2middle, #banner2right{
+    width: 33.3%;
+    /* border: red solid; */
+}
+#banner2left{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 10%;
+    padding-right: 30px;
+}
+#banner2middle{
+    margin: 40px 0 ;
+}
+#banner2right{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10%;
+    padding-left: 10px;
+}
+#Banner2 img{
+    border-radius: 20%;
+}
+
