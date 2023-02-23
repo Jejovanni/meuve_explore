@@ -1,0 +1,8 @@
+#Banner3{
+    font-family: var(--meuve-family);
+    font-size: 40px;
+    margin-top: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}

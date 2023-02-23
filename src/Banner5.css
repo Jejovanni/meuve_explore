@@ -1,0 +1,15 @@
+#Banner5{
+    font-family: var(--meuve-family) !important;
+    height: 80vh;
+    font-size: 35px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Banner5 Button{
+    background-color: black;
+    width: 20rem !important;
+    align-self: center;
+    /* margin-top: 50px; */
+}
