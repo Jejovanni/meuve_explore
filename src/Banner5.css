@@ -15,24 +15,26 @@
 #Banner5 .ShopTwoIcon{
     margin-right: 3px;
 }
-
-/* #Banner5{
-    font-family: var(--meuve-family) !important;
-    height: 80vh;
-    font-size: 35px;
-    margin-top: 20px;
+@media (min-width: 1024px) {
+    #Banner5{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80vh;
+    font-size: 35px;
+    margin-top: 20px;
 }
-#Banner5 Button{
-    background-color: black !important;
-    width: 30rem !important;
-    height: 100px;
-    align-self: center;
-    border-radius: 50px;
+    #Banner5 Button{
+    min-width: 20rem !important;
+    min-height: 5rem !important;
     margin-top: 50px;
+    border-radius: 60px;
+    font-size: 1.2rem;
+    margin-top: 50px;
+    }
 }
+
+/* 
 #Banner5 AppleIcon{
     margin-right: 100px;
 } */

@@ -6,13 +6,21 @@
 #Banner3 h1{
     padding: 2rem 0;
 }
-
-
-/* #Banner3{
-    font-family: var(--meuve-family);
-    font-size: 40px;
+@media (min-width: 1024px) {
+    #Banner3{
     margin-top: 20px;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-} */
+}
+#Banner3 Button{
+        min-width: 20rem !important;
+        min-height: 5rem !important;
+        margin-top: 50px;
+        border-radius: 60px;
+        font-size: 1.2rem;
+}
+}
+
+/*  */

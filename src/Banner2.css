@@ -24,36 +24,42 @@
     text-align: left;
     padding: 1rem 0.8rem 1rem 0.8rem;
 }
-/* #Banner2{
-    font-family: var(--meuve-family) !important;
+@media (min-width: 1024px) {
+    #Banner2{
+    background-color: var(--meuve-background);
     font-size: 35px;
     margin-top: 80px;
     display: flex;
     flex-direction: row;
     min-height: 100vh;
 }
-#banner2left, #banner2middle, #banner2right{
-    max-width: 33.3%;
-    border: red solid;
+    #banner2left, #banner2middle, #banner2right{
+        max-width: 33.3%;
+        /* border: red solid; */
+    }
+    #banner2left{
+        display: flex;
+        align-items: flex-start;
+        padding-top: 10%;
+    }
+    #banner2middle{
+        display: flex;
+        justify-content: center;
+        /* padding: 40px 0 ; */
+        align-items: center;
+        /* min-width: 35%; */
+    }
+    #banner2right{
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 10%;
+        padding-left: 10px;
+    }
+    #Banner2 img{
+        border-radius: 9%;
+        /* border: red solid; */
+        max-width: 90% !important;
+    }
 }
-#banner2left{
-    display: flex;
-    align-items: flex-start;
-    padding-top: 10%;
-}
-#banner2middle{
-    padding: 40px 0 ;
-}
-#banner2right{
-    display: flex;
-    align-items: flex-end;
-    padding-bottom: 10%;
-    padding-left: 10px;
-}
-#Banner2 img{
-    border-radius: 20%;
-    border: red solid;
-    
-
-} */
+/*  */
 
