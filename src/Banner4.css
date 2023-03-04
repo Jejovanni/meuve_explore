@@ -1,4 +1,8 @@
-#Banner4{
+#Banner4middle{
+    padding: 3rem 0;
+}
+
+/* #Banner4{
     font-family: var(--meuve-family);
     font-size: 35px;
     margin-top: 20px;
@@ -6,9 +10,9 @@
     display: flex;
     align-items: center;
 }
-/* #Banner4left, #Banner4middle, #Banner4right{
+#Banner4left, #Banner4middle, #Banner4right{
     width: 33.3%;
-} */
+}
 
 #Banner4left img, #Banner4right img{
     border-radius: 20%;
@@ -19,4 +23,4 @@
 #Banner4middle{
     width: 33.3%;
     margin: 0 40px;
-}
+} */

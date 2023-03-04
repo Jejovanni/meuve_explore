@@ -1,22 +1,39 @@
-.Banner1{
+ 
+ #Bannertxt{
+    font-size: clamp(3rem, 10vw, 5rem);
+    text-align: left;
+ }
+ #Bannersmall{
+    text-align: left;
+    font-weight: 200;
+    margin: 15px 0 0 0;
+ }
+ #Bannerleft Button{
+    margin: 15px 0;
+    background-color: black;
+    justify-content: flex-start;
+ }
+
+ 
+ 
+ 
+ /* .Banner1{
     display: flex;  
   flex-direction: row;
-  max-height: 88vh;
+  min-height: 88vh;
 
 }
 #Bannerleft{
     display: flex;
     flex-direction: column;
-    /* border: red solid; */
-    width: 50%;
+     max-width: 50%;
     align-self: center;
 }
-#Bannerright{
-    width: 50%;
+ #Bannerright{
+    max-width: 50%;
     margin-left: 100px;
-    /* border: red solid; */
-    /* border-radius: 20px; */
-}
+    border: red solid;
+} 
 #Bannertxt{
     font-size: 80px;
     text-align: left;
@@ -25,19 +42,18 @@
 #Bannersmall{
     font-size: 20px;
     text-align: left;
-    /* border: blue solid; */
     margin-top: 30px;
     font-weight: 400;
 
 }
 #Bannerleft Button{
-    width: 20rem !important;
+    max-width: 20rem !important;
     align-self: center;
     margin-top: 50px;
 }
 img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
     border-radius: 10%;
-}
+}  */

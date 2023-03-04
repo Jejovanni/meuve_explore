@@ -1,8 +1,18 @@
 #Banner3{
+    min-height: min-content;
+    padding: 5rem 0;
+    margin-bottom: 2rem;
+}
+#Banner3 h1{
+    padding: 2rem 0;
+}
+
+
+/* #Banner3{
     font-family: var(--meuve-family);
     font-size: 40px;
     margin-top: 20px;
     height: 100vh;
     display: flex;
     align-items: center;
-}
+} */

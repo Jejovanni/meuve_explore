@@ -1,4 +1,22 @@
 #Banner5{
+    padding: 4rem 0;
+}
+#Banner5 h1{
+    padding-bottom: 4rem;
+}
+#Banner5 Button{
+    margin: 1rem 0;
+    min-height: 4rem;
+    border-radius: 30px;
+}
+#Banner5 .Appleicon {
+    margin-right: 3px;
+}
+#Banner5 .ShopTwoIcon{
+    margin-right: 3px;
+}
+
+/* #Banner5{
     font-family: var(--meuve-family) !important;
     height: 80vh;
     font-size: 35px;
@@ -8,8 +26,13 @@
     align-items: center;
 }
 #Banner5 Button{
-    background-color: black;
-    width: 20rem !important;
+    background-color: black !important;
+    width: 30rem !important;
+    height: 100px;
     align-self: center;
-    /* margin-top: 50px; */
+    border-radius: 50px;
+    margin-top: 50px;
 }
+#Banner5 AppleIcon{
+    margin-right: 100px;
+} */
