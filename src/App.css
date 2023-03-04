@@ -7,7 +7,12 @@
   
 }
 body{
-  margin: 1em 5em;
+  margin: 1em;
+}
+@media (min-width: 1024px) {
+    body{
+    margin: 1em 5em;
+  }
 }
 .App {
   text-align: center;
