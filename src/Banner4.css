@@ -11,7 +11,7 @@
     height: 100vh;
 }
 #Banner4left, #Banner4middle, #Banner4right{
-    max-width: 33.3%;
+    min-width: 33.3%;
 }
 }
 /* 
