@@ -18,6 +18,7 @@ function App() {
       <Banner4/>
       <Banner5/>
       <Footer/>
+      
     </div>
   );
 }
