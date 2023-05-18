@@ -7,7 +7,7 @@ function Banner2() {
       <div id='banner2left'>
         <h1>Whether you're a local or a tourist</h1></div>
       <div id='banner2middle'>
-        <img src="./Banner2Img.jpg" alt="" />
+        <img loading='lazy' src="./Banner2Img.jpg" alt="" />
       </div>
       <div id='banner2right'>
         <h1>find the latest and greatest happenings in town</h1>
