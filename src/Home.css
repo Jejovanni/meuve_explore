@@ -1,42 +1,117 @@
-.Navbar{
+.Navbar {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
+    background-color: #005A6E;
+    color: #ffffff;
+    min-width: 100%;
+    padding: 1rem 1rem;
 }
-#logo{
-    min-height:  min-content;
+
+@media (min-width: 1024px) {
+    .Navbar {
+        padding: 1.5rem 5rem;
+    }
 }
-#btnDiv{
+
+#logo {
+    min-height: min-content;
+}
+
+#btnDiv {
     display: flex;
     justify-content: flex-end;
     align-self: center;
     width: 100%;
 }
-#demo-positioned-button{
+
+@media (min-width: 1024px) {
+    #btnDiv {
+        display: none !important;
+    }
+}
+
+#demo-positioned-button {
     /* border: blue solid; */
     background-color: var(--meuve-background) !important;
     color: black;
 }
- 
- #Bannertxt{
+
+nav button {
+    height: 4rem;
+    width: 10rem;
+    border-radius: 60px;
+    font-size: 20px;
+}
+
+nav li {
+    list-style: none;
+    align-items: center;
+}
+
+nav #listItems {
+    display: none;
+    font-size: 20px;
+}
+
+#listItems button {
+    margin-left: 2rem;
+}
+
+@media (min-width: 1024px) {
+    nav #listItems {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-width: 92%;
+    }
+}
+
+.Banner1 {
+    background-image: url("/public/blob-scene-haikei-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 3rem;
+}
+@media (min-width: 1024px) {
+    .Banner1 {
+            background-image: url("/public/blob-scene-haikei.svg");
+            
+        }
+}
+
+#Bannerleft {
+    padding-left: 1rem;
+}
+
+@media (min-width: 1024px) {
+    #Bannerleft {
+        padding-left: 5rem;
+    }
+}
+
+#Bannertxt {
     font-size: clamp(3rem, 10vw, 5rem) !important;
     text-align: left;
- }
- #Bannersmall{
+}
+
+#Bannersmall {
     text-align: left;
     font-weight: 200;
     margin: 15px 0 0 0;
- }
- #Bannerleft Button{
+}
+
+#Bannerleft Button {
     margin: 15px 0;
     background-color: black;
-     min-width: 20rem !important;
-        min-height: 5rem !important;
-        /* margin-top: 50px; */
-        border-radius: 60px;
-        font-size: 1rem;
- }
+    min-width: 20rem !important;
+    min-height: 5rem !important;
+    /* margin-top: 50px; */
+    border-radius: 60px;
+    font-size: 1rem;
+}
 
-#Banner2{
+#Banner2 {
     /* background-color: var(--meuve-color); */
     border-radius: 2%;
     /* min-height: 80vh; */
@@ -45,67 +120,79 @@
     flex-direction: column;
 
 }
-#banner2left{
+
+#banner2left {
     text-align: right;
     padding: 1rem 0.8rem 1rem 0.8rem;
 }
-#banner2middle{
+
+#banner2middle {
     min-height: min-content;
 }
-#Banner2 img{
+
+#Banner2 img {
     min-height: 500px !important;
     padding: 0rem 0.4rem 0 0.4rem;
     object-fit: cover !important;
 
 }
-#banner2right{
+
+#banner2right {
     text-align: left;
     padding: 1rem 0.8rem 1rem 0.8rem;
 }
 
-#Banner3{
+#Banner3 {
     min-height: min-content;
     padding: 5rem 0;
     margin-bottom: 2rem;
 }
-#Banner3 h1{
+
+#Banner3 h1 {
     padding: 2rem 0;
 }
-#Banner3 Button{
-        min-width: 20rem !important;
-        min-height: 5rem !important;
-        /* margin-top: 50px; */
-        border-radius: 60px;
-        font-size: 1rem;
+
+#Banner3 Button {
+    min-width: 20rem !important;
+    min-height: 5rem !important;
+    /* margin-top: 50px; */
+    border-radius: 60px;
+    font-size: 1rem;
 }
 
-#Banner4middle{
+#Banner4middle {
     padding: 3rem 0;
 }
 
-#Banner5{
+#Banner5 {
     padding: 4rem 0;
 }
-#Banner5 h1{
+
+#Banner5 h1 {
     padding-bottom: 4rem;
 }
-#Banner5 Button{
+
+#Banner5 Button {
     margin: 1rem 0;
     min-height: 4rem;
     border-radius: 30px;
 }
+
 #Banner5 .Appleicon {
     margin-right: 3px;
 }
-#Banner5 .ShopTwoIcon{
+
+#Banner5 .ShopTwoIcon {
     margin-right: 3px;
 }
-footer{
+
+footer {
     display: flex;
     width: 100%;
     /* border: red solid; */
 }
-#footercopy{
+
+#footercopy {
     display: flex;
     align-items: center;
     font-family: var(--meuve-family);
@@ -116,36 +203,41 @@ footer{
 }
 
 @media (min-width: 1024px) {
-    .Banner1{
-        display: flex;  
+    .Banner1 {
+        display: flex;
         flex-direction: row;
         min-height: 88vh;
-        }
-    #Bannerleft{
+    }
+
+    #Bannerleft {
         display: flex;
         flex-direction: column;
         max-width: 50%;
         align-self: center;
-        }
-    #Bannerright{
+    }
+
+    #Bannerright {
         display: flex;
         max-width: 50%;
         align-items: center;
         justify-content: center;
-        } 
-    #Bannertxt{
+    }
+
+    #Bannertxt {
         font-size: 80px;
         text-align: left;
         font-family: var(--meuve-family) !important;
     }
-    #Bannersmall{
+
+    #Bannersmall {
         font-size: 20px;
         text-align: left;
         margin-top: 30px;
         font-weight: 400;
 
-        }
-    #Bannerleft Button{
+    }
+
+    #Bannerleft Button {
         display: flex;
         min-width: 20rem !important;
         min-height: 5rem !important;
@@ -155,7 +247,8 @@ footer{
         border-radius: 60px;
         font-size: 1.2rem;
     }
-    img{
+
+    img {
         max-width: 80%;
         max-height: 80%;
         object-fit: cover;
@@ -163,39 +256,46 @@ footer{
     }
 }
 
- 
+
 @media (min-width: 1024px) {
-    #Banner2{
-    background-color: var(--meuve-background);
-    font-size: 35px;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
-}
-    #banner2left, #banner2middle, #banner2right{
+    #Banner2 {
+        background-color: var(--meuve-background);
+        font-size: 35px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+    }
+
+    #banner2left,
+    #banner2middle,
+    #banner2right {
         max-width: 33.3%;
         /* border: red solid; */
     }
-    #banner2left{
+
+    #banner2left {
         display: flex;
         align-items: flex-start;
         padding-top: 10%;
     }
-    #banner2middle{
+
+    #banner2middle {
         display: flex;
         justify-content: center;
         /* padding: 40px 0 ; */
         align-items: center;
         /* min-width: 35%; */
     }
-    #banner2right{
+
+    #banner2right {
         display: flex;
         align-items: flex-end;
         padding-bottom: 10%;
         padding-left: 10px;
     }
-    #Banner2 img{
+
+    #Banner2 img {
         border-radius: 9%;
         /* border: red solid; */
         max-width: 90% !important;
@@ -203,53 +303,57 @@ footer{
 }
 
 @media (min-width: 1024px) {
-    #Banner3{
-    /* padding-top: 200px; */
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#Banner3 Button{
+    #Banner3 {
+        /* padding-top: 200px; */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Banner3 Button {
         min-width: 20rem !important;
         min-height: 5rem !important;
         margin-top: 50px;
         border-radius: 60px;
         font-size: 1.2rem;
-}
-}
-
-@media (min-width: 1024px) {
-    #Banner4{
-    font-family: var(--meuve-family);
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    margin-top: 20px;
-    height: 100vh;
-}
-#Banner4left, #Banner4middle, #Banner4right{
-    min-width: 33.3%;
-}
-}
-
-@media (min-width: 1024px) {
-    #Banner5{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-    font-size: 35px;
-    margin-top: 20px;
-}
-    #Banner5 Button{
-    min-width: 20rem !important;
-    min-height: 5rem !important;
-    margin-top: 50px;
-    border-radius: 60px;
-    font-size: 1.2rem;
-    margin-top: 50px;
     }
 }
- 
+
+@media (min-width: 1024px) {
+    #Banner4 {
+        font-family: var(--meuve-family);
+        display: flex;
+        align-items: center;
+        font-size: 35px;
+        margin-top: 20px;
+        height: 100vh;
+    }
+
+    #Banner4left,
+    #Banner4middle,
+    #Banner4right {
+        min-width: 33.3%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #Banner5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    #Banner5 Button {
+        min-width: 20rem !important;
+        min-height: 5rem !important;
+        margin-top: 50px;
+        border-radius: 60px;
+        font-size: 1.2rem;
+        margin-top: 50px;
+    }
+}

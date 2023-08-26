@@ -1,38 +1,45 @@
-:root{
-   --meuve-color: #fcab47;
+:root {
+  --meuve-color: #fcab47;
   --meuve-background: #f1f1f1;
   --meuve-font: #282727;
-  --meuve-fontSizeBtns: 20px ;
+  --meuve-fontSizeBtns: 20px;
   font-family: 'IBM Plex Sans', sans-serif;
-  
+
 }
-body{
+
+/* body{
   margin: 1em;
-}
+} */
 @media (min-width: 1024px) {
-    body{
-    margin: 1em 5em;
+  body {
+    /* margin: 0em 5em; */
+    min-width: 100%;
   }
 }
+
 .App {
   text-align: center;
 }
-img{
+
+img {
   border-radius: 8%;
   width: 100%;
   height: 100%;
 }
-.logo{
-    font-family: 'Pacifico', cursive !important; 
-    font-size: 2.5rem;
-    /* border: red solid; */
-}
-h1{
-    font-size: clamp(3rem, 10vw, 5rem);
-}
-Button{
-  background-color: black !important;
-}
-@media (min-width: 768px) {
 
+.logo {
+  font-family: 'Pacifico', cursive !important;
+  font-size: 2.5rem;
+  /* border: red solid; */
 }
+
+h1 {
+  font-size: clamp(3rem, 10vw, 5rem);
+}
+
+Button {
+  background-color: #121212 !important;
+  color: #f8fafc;
+}
+
+@media (min-width: 768px) {}
