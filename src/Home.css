@@ -1,39 +1,77 @@
 .Navbar {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     background-color: #005A6E;
     color: #ffffff;
     min-width: 100%;
     padding: 1rem 1rem;
 }
 
-@media (min-width: 1024px) {
-    .Navbar {
-        padding: 1.5rem 5rem;
-    }
-}
 
-#logo {
+.logo {
+    display: flex;
+    align-content: center;
     min-height: min-content;
+    color: #ffffff;
 }
 
 #btnDiv {
     display: flex;
-    justify-content: flex-end;
-    align-self: center;
+    align-items: center;
+    /* border: 2px solid;
+    border-color: red; */
+}
+
+#btnDiv Button {
+    background-color: #005A6E !important;
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+#menuTray {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    z-index: 9999;
+    /* Higher z-index to ensure it's above other content */
 }
 
-@media (min-width: 1024px) {
-    #btnDiv {
-        display: none !important;
-    }
+#overlayNavbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #005A6E;
+    color: #ffffff;
+    min-width: 100%;
+    padding: 1rem 1rem;
 }
 
-#demo-positioned-button {
-    /* border: blue solid; */
-    background-color: var(--meuve-background) !important;
+#menuTrayItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     color: black;
+    font-size: xx-large;
+    font-weight: 400;
+}
+#trayList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.trayButton{
+    text-decoration: none;
+    color: black;
+    /* min-height: 4rem;
+        min-width: 10rem;
+        font-size: 20px; */
 }
 
 nav button {
@@ -73,40 +111,28 @@ nav #listItems {
     background-position: center;
     padding-top: 3rem;
 }
-@media (min-width: 1024px) {
-    .Banner1 {
-            background-image: url("/public/blob-scene-haikei.svg");
-            
-        }
-}
 
 #Bannerleft {
     padding-left: 1rem;
-}
-
-@media (min-width: 1024px) {
-    #Bannerleft {
-        padding-left: 5rem;
-    }
+    padding-right: 1rem;
+    text-align: left;
 }
 
 #Bannertxt {
     font-size: clamp(3rem, 10vw, 5rem) !important;
-    text-align: left;
 }
 
 #Bannersmall {
-    text-align: left;
-    font-weight: 200;
-    margin: 15px 0 0 0;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 15px 0 15px 0;
 }
 
 #Bannerleft Button {
     margin: 15px 0;
     background-color: black;
-    min-width: 20rem !important;
-    min-height: 5rem !important;
-    /* margin-top: 50px; */
+    min-width: 15rem !important;
+    min-height: 4.2rem !important;
     border-radius: 60px;
     font-size: 1rem;
 }
@@ -146,6 +172,10 @@ nav #listItems {
     min-height: min-content;
     padding: 5rem 0;
     margin-bottom: 2rem;
+    background-image: url(/public/blob-haikei-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #Banner3 h1 {
@@ -189,24 +219,38 @@ nav #listItems {
 footer {
     display: flex;
     width: 100%;
-    /* border: red solid; */
+    background-color: #005A6E;
+    padding: 1rem 1rem;
 }
 
 #footercopy {
+    color: whitesmoke;
     display: flex;
     align-items: center;
     font-family: var(--meuve-family);
     font-size: 20px;
-    /* border: red solid; */
     width: 100%;
     justify-content: flex-end;
 }
 
+/* MEDIA QUERIES */
+
+
 @media (min-width: 1024px) {
+
+    .Navbar {
+        padding: 1.5rem 5rem;
+    }
+
+    #btnDiv {
+        display: none !important;
+    }
+
     .Banner1 {
         display: flex;
         flex-direction: row;
         min-height: 88vh;
+        background-image: url("/public/blob-scene-haikei.svg");
     }
 
     #Bannerleft {
@@ -214,6 +258,7 @@ footer {
         flex-direction: column;
         max-width: 50%;
         align-self: center;
+        padding-left: 5rem;
     }
 
     #Bannerright {
@@ -225,13 +270,11 @@ footer {
 
     #Bannertxt {
         font-size: 80px;
-        text-align: left;
         font-family: var(--meuve-family) !important;
     }
 
     #Bannersmall {
-        font-size: 20px;
-        text-align: left;
+        font-size: 30px;
         margin-top: 30px;
         font-weight: 400;
 
@@ -304,7 +347,10 @@ footer {
 
 @media (min-width: 1024px) {
     #Banner3 {
-        /* padding-top: 200px; */
+        background-image: url(/public/blob-haikei.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         height: 100vh;
         display: flex;
         flex-direction: column;
