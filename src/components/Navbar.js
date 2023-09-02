@@ -16,7 +16,7 @@ function Navbar() {
                 <div className='logo'>meuve</div>
                 <div id='btnDiv'>
                     <Button className='menu-toggle' onClick={toggleMenu}>
-                        {isOpen ? <CloseRounded /> : <MenuRounded />}
+                        {isOpen ? <CloseRounded /> : <MenuRounded className='trayMenuBtn' />}
                     </Button>
                     {/* Mobile menu */}
                     {isOpen && (
@@ -25,7 +25,7 @@ function Navbar() {
                                 <div className='logo'>meuve</div>
                                 <div id='btnDiv'>
                                     <Button className='menu-toggle' onClick={toggleMenu}>
-                                        <CloseRounded />
+                                        <CloseRounded className='trayMenuBtn' />
                                     </Button>
                                 </div>
 
@@ -34,7 +34,7 @@ function Navbar() {
                             <div id='menuTrayItems'>
 
                                 <ul id='trayList'>
-                                    <li>About</li>
+                                    <li><Link className='trayButton'>About</Link></li>
                                     <li><Link className='trayButton'>Login</Link></li>
                                     <li><Link className='trayButton'>Signup</Link></li>
                                 </ul>

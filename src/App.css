@@ -1,3 +1,4 @@
+
 :root {
   --meuve-color: #fcab47;
   --meuve-background: #f1f1f1;
@@ -42,4 +43,4 @@ Button {
   color: #f8fafc;
 }
 
-@media (min-width: 768px) {}
+/* @media (min-width: 768px) {} */

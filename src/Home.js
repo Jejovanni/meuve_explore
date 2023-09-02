@@ -14,13 +14,17 @@ function Home() {
                 <div id='Bannerleft'>
                     <h1 id='Bannertxt'>Discover cool places, restaurants, parties & hotspots in a city</h1>
                     <h4 id='Bannersmall'>Welcome to our city exploration product. Your one-stop solution for discovering all the cool places, events and parties in your city</h4>
+
+
+
+                    {/* <h4 id='Bannersmall'>Welcome to our city exploration product. Your one-stop solution for discovering all the cool places, events and parties in your city</h4> */}
                     <Button className='btns' variant='contained'>Start Exploring</Button>
                 </div>
                 <div id='Bannerright'>
                     <img src='./Banner1Img.jpg' loading='lazy' alt='' />
                     {/* Photo by <a href="https://unsplash.com/@bluespit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shingi Rice</a> on <a href="https://unsplash.com/photos/kUmzO9mKLDk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
                 </div>
-            </div>
+            </div >
             <div id='Banner2'>
                 <div id='banner2left'>
                     <h1>Whether you're a local or a tourist</h1></div>
@@ -51,7 +55,7 @@ function Home() {
                 <Button className='btns' variant='contained' > <AppleIcon className='Appleicon' fontSize='large' marginRight='59px' /> Download for IPhone</Button>
                 <Button className='btns' variant='contained'> <ShopTwoIcon className='ShopTwoIcon' fontSize='large' />  Download for Andriod</Button>
             </div>
-            <Footer/>
+            <Footer />
         </>
     )
 }
